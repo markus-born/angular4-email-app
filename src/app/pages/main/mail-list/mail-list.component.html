@@ -1,0 +1,8 @@
+<div class="list-container">
+  <ul class="list-group">
+    <h2>Emails</h2>
+    <hr/>
+    <li class="list-group-item" *ngFor="let mail of mails" [routerLink]="[mail.$loki]">{{mail.title}}</li>
+  </ul>
+  <div class="alert alert-danger" *ngIf="mails.length == 0">There is no mail to display.</div>.
+</div>

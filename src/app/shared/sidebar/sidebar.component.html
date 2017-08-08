@@ -1,0 +1,8 @@
+<aside>
+  <h2>Folders</h2>
+  <button class="btn btn-primary" [routerLink]="['/compose']">Compose</button>
+  <hr/>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let folder of folders" [routerLink]="['/', folder.value]" routerLinkActive="active">{{folder.name}}</li>
+  </ul> 
+</aside>

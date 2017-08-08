@@ -1,0 +1,44 @@
+[
+  {
+    "type": "inbox",
+    "from": "test@mail.com",
+    "to": "",
+    "title": "Greetings",
+    "content": "<p>Hello world</p>"
+  },
+  {
+    "type": "inbox",
+    "from": "user@mail.com",
+    "to": "",
+    "title": "Hi",
+    "content": "<p><strong>Are you there?</strong></p>"
+  },
+  {
+    "type": "inbox",
+    "from": "devuser@mail.com",
+    "to": "",
+    "title": "About the project",
+    "content": "<p><strong>Hi, I would like to discuss with you about the project.</strong></p>"
+  },
+  {
+    "type": "inbox",
+    "from": "tester@mail.com",
+    "to": "",
+    "title": "QA Test Result",
+    "content": "<p>All good! Ready for releasing.</p>"
+  },
+  {
+    "type": "inbox",
+    "from": "tester2@mail.com",
+    "to": "",
+    "title": "Issue found",
+    "content": "<p>Please check out issue #1045.</p>"
+  },
+  {
+    "type": "sent",
+    "to": "devuser@mail.com",
+    "from": "",
+    "title": "Good work",
+    "content": "<p>The client was very happy with the work.</p>"
+  }
+]

@@ -1,0 +1,13 @@
+<div class="mail-container">
+  <h2>{{mail.title}}</h2>
+  <hr/>
+  <p *ngIf="mail.to; else elseBlock"><strong>To:</strong> {{mail.to}}</p>
+  <ng-template #elseBlock>
+    <p><strong>From:</strong> {{mail.from}}</p>
+  </ng-template>
+  <p><strong>Folder:</strong> {{mail.type}}</p>
+  <p><strong>Content:</strong></p>
+  <p [innerHTML]="mail.content"></p>
+  <button class="btn btn-primary" *ngIf="mail.type == 'inbox'" [routerLink]="['../../', 'compose']">Reply</button>
+  <button class="btn btn-danger" *ngIf="mail.type != 'deleted'" (click)="delete()">Delete</button>
+</div>
